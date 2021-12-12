@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matan's CV</title>
+    <script src="../static/CV.js"></script>
+    <link rel="stylesheet" href="../static/CV.css">
+</head>
+<body>
+
+    <form>
+        <label for="choose">Chose a fruit</label>
+        <input type="text" id="choose" name="fruit" list="l1">
+        <datalist id="l1">
+            <option>Banana</option>
+            <option>Cherry</option>
+            <option>Apple</option>
+            <option>Strawberry</option>
+            <option>Lemon</option>
+            <option>Orange</option>
+          </datalist><br>
+        <label for="" id="Fname">First Name</label> 
+        <input required type="text" id="Fname" name="Fname"><br>
+        <label for="" id="Lname">Last Name</label>
+        <input required type="text" id="Lname" name="Lname"><br>
+        <label for="" id="email">Email</label>
+        <input type="text" id="email" name="email"><br>
+        <label for="" id="color">Favorite color?</label>
+        <input required type="color" id="color" name="color"><br>
+        <label for="" id="Bday">Birthday</label>
+        <input type="date" id="Bday" name="bday"><br>
+        <button type="submit">Submit</button>
+      </form>
+
+<br>
+<br>
+
+    <div class="button">
+        <button id="clickme" onclick="changeImage();">Click to change image!</button>
+    </div>
+    
+    <div class="pic">
+        <img src="Logo.jpeg" class="Pics" id="Logo" width="300" height="300">
+    </div>
+
+    <div class="header">
+        Matan Spiro
+    </div>
+
+    <div class="left">
+        Skills
+    </div>
+
+    <div class="center">
+        About me
+    </div>
+
+    <div class="bottom">
+        Languages
+    </div>
+
+</body>
+</html>
+
+
