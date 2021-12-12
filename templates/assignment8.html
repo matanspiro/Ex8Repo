@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    {% extends base.html %}
+    {% block title %} Assignment 8 {%endblock}
 
-</body>
-</html>
+    {% block content %}
+    {{super()}}
+    First Name: {{firstName | default('Unknown', true) | upper()}}
+    Last Name : {{lastName} | default('Unknown', true) | lower()}}
+    {% if name %}}
+        Thanks for writing your name
+    {% else %}}
+        Why didn't you write your name?
+    {% endif %}
+
+    Hobbies:
+    <ol>
+        {% for hobby in hobbies %}
+            <li>{{hobby}}</li>
+        {% endfor %}
+    </ol>
+    {% endblock %}

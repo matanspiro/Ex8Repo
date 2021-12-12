@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <script src="/static/CV.js"></script>
+    <link rel="stylesheet" href="/static/ass8.css">
+</head>
+<body>
+    {% include 'Header.html' %}
+    <br>
+    {% block content %} This line was written to demonstrate the Super function {% endblock %}
+    <br>
+    {% include 'Footer.html' %}
+</body>
+</html>

@@ -1,7 +1,8 @@
 function changeImage() {
-var img = document.getElementById("Logo");
-img.src="exm.jpg";
-return false;
+    const img = document.getElementById("Logo");
+    img.src="/static/exm.JPG"
+    return false;
+
 }
 
 
