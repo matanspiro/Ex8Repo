@@ -9,7 +9,8 @@ def homepage():
 @app.route('/assignment8')
 def ass8():
     return render_template('assignment8.html', firstName='Matan', lastName='Spiro',
-                           hobbies=('swimming','reading','soccer'))
+                           hobbies=('swimming', 'reading', 'soccer'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
